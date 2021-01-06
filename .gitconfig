@@ -1,0 +1,14 @@
+[user]
+	email = 244752705@qq.com
+	name = hexi519
+[credential]
+	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
+[alias]
+	a = add .
+	co = checkout
+	br = branch
+	ci = commit -m
+	st = status
+
+[core]
+	editor = vim
