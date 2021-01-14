@@ -9,6 +9,7 @@
 	br = branch
 	ci = commit -m
 	st = status
+	line = log --oneline
 
 [core]
 	editor = vim
