@@ -9,7 +9,14 @@
 	br = branch
 	ci = commit -m
 	st = status
-	line = log --oneline
+    line=log --oneline
+	d = difftool
 
 [core]
 	editor = vim
+[mergetool]
+	keepBackup = false
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
