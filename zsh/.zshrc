@@ -2,7 +2,8 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="~/.oh-my-zsh"
+# attention: shoule complete the preficx of zsh
+export ZSH="/home/hesy/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -98,21 +99,30 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# 显示主机前缀
-PROMPT='%{$fg[green]%}%m@%{$fg[magenta]%}%(?..%?%1v)%n:%{$reset_color%}%{$fg[cyan]%}%~# '
-
-alias mars="cd ~/projects/mars_ns3/scratch"
-alias ns3="cd ~/projects/ns3/ns3-test/scratch"
 alias clear="clear && clear"
-
-alias scls="screen -ls"
-alias scr="screen -r"
-alias scs="screen -S"
 
 alias tms="tmux new -s"
 alias tmls="tmux ls"
 alias tmsw="tmux switch -t"
 alias tma="tmux attach -t"
 
-source activate py36
+# for conda init
+# added by Anaconda3 5.3.1 installer
+# >>> conda init >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$(CONDA_REPORT_ERRORS=false '/home/hesy/software/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    \eval "$__conda_setup"
+else
+    if [ -f "/home/hesy/software/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/hesy/software/anaconda3/etc/profile.d/conda.sh"
+        CONDA_CHANGEPS1=false conda activate base
+    else
+        \export PATH="/home/hesy/software/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda init <<<
+
+source activate deepctr
 

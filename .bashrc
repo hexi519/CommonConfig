@@ -118,14 +118,6 @@ fi
 
 
 #### alias ####
-alias pan="cd /home/hesy/pro/pan/pantheon"
-alias scls="screen -ls"
-alias scr="screen -r"
-alias scs="screen -S"
-alias pcc-rl="cd /home/hesy/pro/pan/pantheon/third_party/PCC-RL"
-alias pcc-udt="cd /home/hesy/pro/pan/pantheon/third_party/PCC-Uspace"
-alias blog="cd /home/hesy/env/hexi519.github.io/source/_posts"
-alias aurora="cd /home/hesy/pro/pan/pantheon/third_party/compararisonOfUdt/src"
 alias ni="watch -n 10 nvidia-smi"
 source activate py36
 #source activate pan
